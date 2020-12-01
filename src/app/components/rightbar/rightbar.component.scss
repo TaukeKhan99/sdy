@@ -1,0 +1,89 @@
+.rightbar{
+    width: 400px;
+    padding-top: 40px;
+    background: #525252;
+    height:100vh;
+    overflow-y: scroll;
+}
+.univer_title:first-child{
+    background: #FAC91B;
+    font-weight: bold;
+    font-size: 26px;
+    display: flex;
+    padding: 5px 30px;
+    color: #FFFFFF;
+}
+.syllabus_title{
+    background: #FAC91B;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 5px 30px;
+    color: #FFFFFF;
+}
+.slider{
+    padding: 20px 20px 25px 30px;
+    .line{
+        width: 100px;
+        border-bottom: 4px solid #FAC91B;
+        padding: 8px;
+    }
+    >img{
+        border: 3px solid #fff;
+        width: 240px;
+        height: 160px;
+    }
+}
+.desc{
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+    padding: 30px;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+.syllabus_task{
+    cursor: pointer;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    >img:first-child{
+        margin-right: 10px;
+    }
+  
+}
+.lecture_task{
+    margin-bottom: 20px;
+    list-style: none;
+    margin-left: 40px;
+    outline: none;
+    .task{
+        margin-left: 20px;
+        cursor: pointer;
+        outline: none;
+        display: flex;
+        font-weight: 500;
+        font-size: 15px;
+        align-items: center;
+        margin-bottom:10px;
+        color: #FFFFFF;
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 8px;
+            font-size: 25px;
+            color: #C6D2D2;
+        }
+        .checked{
+            color: #76DD46;
+        }
+    }
+}

@@ -1,0 +1,154 @@
+<div class="course">
+    <div class="header">
+        <p class="title">Course</p>
+        <div class="header_element">
+            <div class="ellipse message">
+                <div class="circle num_of_message">
+                    3
+                </div>
+                Messages
+            </div>
+            <div class="ellipse user">
+                <div class="circle profile">
+                    <img src="./assets/images/User-icon.png" alt="">
+                </div>
+                <span>Jack Sparrow</span>
+            </div>
+        </div>
+    </div>
+    <div class="sub_header">
+        <div routerLink="/map" class="back"><i class="far fa-arrow-alt-circle-left"></i> Back to Map</div>
+        <div class="road">
+            <p class="univer_name">Carnegie Mellon University</p>
+            <p class="module">M009</p>
+            <p class="course_title">\ Course</p>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="cont1">
+            <div class="module_div">
+                <p>Current Assignments</p>
+                <div class="module_header">
+                    <i class="fas fa-arrow-circle-left"></i>
+                    <p class="module_name">Module 009</p>
+                    <i class="fas fa-arrow-circle-right"></i>
+                </div>
+                <div class="module_container">
+                    <div class="syllabus_task">
+                        <div><img src="./assets/images/chalkboard-teacher-solid 1.png" alt="">Objects and Classes</div>
+                        <div>0 of 0.5 <i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+            
+                    <div class="lecture_task">
+                        <div *ngFor="let task of tasks"  class="task">
+                            <i [class.checked]="task.isChecked" class="icon far {{task.icon}}"></i>
+                            {{task.title}}
+                        </div>
+                    </div>
+            
+                    <div class="syllabus_task">
+                        <div><img src="./assets/images/question-circle-regular 1.png" alt="">Quiz</div>
+                        <div>0 of 0.5 <i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                    <div class="syllabus_task">
+                        <div><img src="./assets/images/medal-solid 1.png" alt="">Contest</div>
+                        <div>0 of 0.5 <i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                    <div class="syllabus_task">
+                        <div><img src="./assets/images/pencil-ruler-solid 1.png" alt="">Project</div>
+                        <div>0 of 0.5 <i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="module_progress">
+                <p class="module_progress_title">Module Progress</p>
+                <p class="module_progress_desc">
+                    Earn +0.3 points to unblock next University
+                </p>
+                <div class="module_progress_div">
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="module_footer">
+                    <p>0</p>
+                    <p>0.8 / 2.0 pts</p>
+                </div>
+            
+            </div>
+        </div>
+        <div class="cont2">
+            <div class="course_details">
+                <p>Course Details</p>
+                <div class="current_grade">
+                    <div class="current_grade_header">
+                        <p>Current grade</p>
+                        <p>25.5 of 72.0pts</p>
+                    </div>
+                    <div class="current_grade_body">
+                        <div><p>Theory</p><hr><p>4.5 of 7.5</p></div>
+                        <div><p>Quizes </p><hr><p>4.0 of 7.5</p></div>
+                        <div><p>Contest </p><hr><p>5.0 of 15.0</p></div>
+                        <div><p>Projects </p><hr><p>9.0 of 15.0</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="discussion">
+                <div class="discussion_header">
+                    <p class="discussion_title">
+                        Discussion
+                    </p>
+                    <div class="num_of_discussion">
+                        3
+                    </div>
+                </div>
+                <div class="discussion_body">
+                    <div class="user_disc">
+                        <div class="prof_disc circle profile">
+                            <img src="./assets/images/User-icon.png" alt="">
+                        </div>
+                        <div class="user_disc_body">
+                            <p>Jack Sparrow</p>
+                            <p>Not all treasure is silver and gold, Mate</p>
+                            <p>15:43 16 September, 2020</p>
+                        </div>
+                    </div>
+                    <div class="user_disc">
+                        <div class="prof_disc circle profile">
+                            <img src="./assets/images/User-icon (1).png" alt="">
+                        </div>
+                        <div class="user_disc_body">
+                            <p>Elizabeth Swann</p>
+                            <p>Do you like pain? Try wearing a corset.</p>
+                            <p>16:20 16 September, 2020</p>
+                        </div>
+                    </div>
+                    <div class="user_disc">
+                        <div class="prof_disc circle profile">
+                            <img src="./assets/images/User-icon (2).png" alt="">
+                        </div>
+                        <div class="user_disc_body">
+                            <p>Davy Jones</p>
+                            <p>You're a cruel man, Jack Sparrow!</p>
+                            <p>18:47 16 September, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="desc_input">
+                        <input type="text" class="inp" placeholder="Your message">
+                        <button class="send_button"><i class="far fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_action">
+                <input type="text" class="inp_quick" placeholder="Quick Actions" name="" id="">
+                <p>Contact teacher</p>
+                <p>Report a technical problem</p>
+                <p>Tutorial</p>
+            </div>
+        </div>
+    </div>
+    
+
+</div>

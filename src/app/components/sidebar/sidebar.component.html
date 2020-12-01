@@ -1,0 +1,16 @@
+<div class="sidebar">
+    <div class="menu">
+        <div class="menu_elem"><p>J</p></div>
+        <ng-container *ngFor="let m of menu; let i=index">
+            <div routerLink="{{m.link}}" (click)="choosen(i)" class="menu_elem" [class.active]="m.isChoosen">
+                <img [src]="m.image" alt="">
+            </div>
+        </ng-container>
+        
+    </div>
+    <div class="profile">
+        <div class="avatar">
+            <img src="./assets/images/User-icon.png" alt="">
+        </div>
+    </div>
+</div>

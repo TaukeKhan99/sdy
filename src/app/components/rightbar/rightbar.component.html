@@ -1,0 +1,41 @@
+<div class="rightbar">
+    <div class="info_about_univer">
+        <div class="univer_title">
+            Carnegie Mellon University
+        </div>
+        <div class="cont">
+            <div class="slider">
+                <img src="./assets/images/image 3.png" alt="">
+                <div class="line"></div>
+            </div>
+            <div class="desc">
+                Carnegie Mellon University (CMU) is a private research university based in Pittsburgh, Pennsylvania. Founded in 1900 by Andrew Carnegie as the Carnegie Technical Schools, the university became the Carnegie Institute of Technology in 1912 and began granting four-year degrees. In 1967, the Carnegie Institute of Technology merged with the Mellon Institute of Industrial Research to form Carnegie Mellon University.
+            </div>
+        </div>
+    </div>
+    <div class="syllabus">
+        <div class="syllabus_title">
+            Your syllabus here:
+        </div>
+        <div class="syllabus_task">
+            <img src="./assets/images/chalkboard-teacher-solid 1.png" alt="">Objects and Classes
+        </div>
+
+        <div class="lecture_task">
+            <div routerLink="/course" *ngFor="let task of tasks"  class="task">
+                <i [class.checked]="task.isChecked" class="icon far {{task.icon}}"></i>
+                {{task.title}}
+            </div>
+        </div>
+
+        <div class="syllabus_task">
+            <img src="./assets/images/question-circle-regular 1.png" alt="">Quiz
+        </div>
+        <div class="syllabus_task">
+            <img src="./assets/images/medal-solid 1.png" alt="">Contest
+        </div>
+        <div class="syllabus_task">
+            <img src="./assets/images/pencil-ruler-solid 1.png" alt="">Project
+        </div>
+    </div>
+</div>

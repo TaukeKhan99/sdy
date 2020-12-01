@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Gamification"
+    }
+  },
+  "defaultProject": "Gamification",
+  "cli": {
+    "analytics": "20cf45fa-5650-4437-94ae-ee162368198c"
+  }
 }
